@@ -1,5 +1,13 @@
 package com.ssafy.happyhouse.model.domain;
 
-public class User {
+import lombok.Data;
 
+@Data
+public class User {
+    private String userid;
+    private String username;
+    private String userpwd;
+    private String email;
+    private String address;
+    private String joindate;
 }
