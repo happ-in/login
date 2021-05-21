@@ -8,4 +8,10 @@
         from    user
         where   userid=#{userid} and userpwd=#{userpwd}
     </select>
+
+    <select id="findByUserName" parameterType="string" resultType="user">
+        select  *
+        from    user
+        where   username=#{username}
+    </select>
 </mapper>
