@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div class="tf-width">
+    <h1 class="m-3">Login</h1>
+    <br />
+    <v-row>
+      <v-col cols="12" sm="9">
+        <v-row>
+          <v-text-field label="ID" hide-details="auto"></v-text-field>
+        </v-row>
+        <v-row>
+          <v-text-field label="PassWord"></v-text-field>
+        </v-row>
+      </v-col>
+      <v-col cols="12" sm="3">
+        <v-btn outlined height="100%">Login</v-btn>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
+<script>
+export default {};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.tf-width {
+  width: 300px;
+  margin: 0 auto;
   text-align: center;
-  color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn-height {
+  height: 300px;
 }
 </style>
